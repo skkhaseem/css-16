@@ -1,0 +1,62 @@
+.container{
+    border: 2px solid gold;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.circle{
+   width: 40px;
+   height: 40px;
+   border: 1px solid;
+   border-radius: 50%;
+}
+.circle1{
+    background-color: rgb(30, 144, 214);
+    animation-name: google;
+    animation-timing-function: ease;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+}
+.circle2{
+    background-color: rgb(226, 17, 17);
+    animation-name: google;
+    animation-timing-function: ease;
+    animation-duration: 1.0s;
+    animation-iteration-count: infinite;
+}
+.circle3{
+    background-color: rgb(240, 240, 85);
+    animation-name: google;
+    animation-timing-function: ease;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+}
+.circle4{
+    background-color: rgb(15, 179, 15);
+    animation-name: google;
+    animation-timing-function: ease;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+}
+@keyframes google{
+0%{
+    transform: translateY(0px);
+}
+50%{
+    transform: translateY(15px);
+}
+75%{
+    transform: translateY(0px);
+}
+100%{
+    transform: translateY(15px);
+}
+     
+}

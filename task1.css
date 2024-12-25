@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    padding: 2px,10px;
+    cursor: pointer;
+}
+.main-container{
+    width: 400px;
+    height: 200px;
+    border-radius: 5px;
+    border: 2px solid gold;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+.container-1{
+    display: flex;
+    justify-content: space-evenly;
+}
+input{
+    margin-left: 20px;
+}
+.box{
+    height: 70px;
+    width: 70px;
+    border: 2px solid;
+    background-color:red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+   transform:translate(-50%,-50%) ; 
+   transition:  0.4s ;
+}
+.translate:hover ~ .box{
+    transform: translateX(10px);
+}
+.scale:hover ~ .box{
+    transform: scale(1.7);
+}
+.rotate:hover ~ .box{
+   transform: rotate(180deg);
+}
+.skew:hover ~ .box{
+    transform: skewX(50deg);
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.rotation{
+    height: 300px;
+    width: 300px;
+    border: 2px solid gold;
+    padding: 10px;
+    text-align: center;
+    justify-content: space-between;
+}
+.box1{
+    font-size: 8rem;
+    display: flex; 
+    justify-content: center;
+    margin-top: 70px;
+    transition: 0.4s ease;
+}
+@keyframes rotate{
+    100%{
+transform: rotate(360deg);
+}
+}
+.fast1:hover ~ .box1{
+   animation: rotate 1s linear infinite;
+}
+.fast2:hover ~ .box1{
+    animation: rotate 0.7s linear infinite;
+}
+.fast3:hover ~ .box1{
+    animation: rotate 0.5s linear infinite;
+}
+.fast4:hover ~ .box1{
+    animation: rotate 0.3s linear infinite;
+}
